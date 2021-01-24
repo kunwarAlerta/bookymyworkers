@@ -1,0 +1,8 @@
+{
+  "port": 8000,
+  "mongoUrl": "mongodb://localhost:27017/bookmyworkers",
+  "jwtsecret": "jwtsecret",
+  "jwtexpire": 800000,
+  "cookieAge":800000,
+  "secretKey":"secret"
+}
