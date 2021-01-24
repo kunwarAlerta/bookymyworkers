@@ -1,7 +1,7 @@
 
 {
     "port": 8000,
-    "mongoUrl": "mongodb+srv://princeinder:prince123@cluster0.lbs8d.mongodb.net/midas-circle?retryWrites=true&w=majority",
+    "mongoUrl": "mongodb+srv://princeinder:prince123@cluster0.lbs8d.mongodb.net/bookmyworkers?retryWrites=true&w=majority",
     "jwtsecret": "jwtsecret",
     "jwtexpire": 800000,
     "cookieAge":800000,
