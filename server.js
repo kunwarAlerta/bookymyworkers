@@ -38,9 +38,9 @@ app.use('/profile', express.static(path.join(__dirname, "./uploads/")));
 app.use('/services', express.static(path.join(__dirname, "./uploads/")));
 
 const server = http.createServer(app);
-
-server.listen(config.get("port"), async () => {
+var port =process.env.PORT || config.get("port");
+server.listen(port, async () => {
   console.log(`Node env :${process.env.NODE_ENV}.`);
-  console.log(`Server Running on port: ${config.get("port")}.`);
+  console.log(`Server Running on port: ${port}.`);
   await connection.mongoDbconnection();
 });
