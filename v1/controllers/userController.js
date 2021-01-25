@@ -16,7 +16,7 @@ async function signin(req, res, next) {
       throw new ValidationError(messages.INCORRECT_PASSWORD);
     }
    req.session.user = data;
-   return res.redirect('/welcome');
+   return res.redirect('/categories');
   } catch (error) {
     next(error);
   }

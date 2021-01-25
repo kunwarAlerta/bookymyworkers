@@ -8,6 +8,5 @@ const messages = {
   INCORRECT_PASSWORD: "Incorrect Password",
   USER_REGISTER_SUCCESSFULLY: "User register successfully",
   USER_SIGNIN_SUCCESSFULLY:"User Signed in ",
-  HOME_SUCCESS:""
 };
 module.exports = messages;
