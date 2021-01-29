@@ -5,6 +5,8 @@
     "jwtsecret": "jwtsecret",
     "jwtexpire": 800000,
     "cookieAge":800000,
-    "secretKey":"secret"
+    "secretKey":"secret",
+    "Client_ID" : "801088723399081995",
+     "Client_Secret" :"X-p0l6e5AK6m9-jlGk6HGGj7dXg_Kzc"
   }
   

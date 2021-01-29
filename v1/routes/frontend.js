@@ -15,6 +15,8 @@ const companyController = require("../controllers/companyController");
 router.get("/", homeController.index);
 
 router.get("/categories", categoryController.index);
+router.get("/companies", companyController.index);
+
 
 router.get("/category/:search", categoryController.search);
 
@@ -22,7 +24,7 @@ router.get("/welcome/:category",companyController.index);
 
 
 router.get("/business", (req, res) => {
-  res.render("frontend/landing/business", { title: "Business" ,user:req.session.user});
+  res.render("frontend/landing/business", { title: "Business" , user:req.session.user});
 });
 
 router.get("/signin", (req, res) => {

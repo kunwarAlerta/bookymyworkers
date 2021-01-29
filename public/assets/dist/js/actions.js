@@ -8,11 +8,12 @@ $(document).ready(function(){
 
     $('#search-category').on('change',function(){
         var searchCategory= $(this).val();
-        console.log(searchCategory)
+        console.log(searchCategory,"data")
         $.ajax('/category/'+searchCategory,   // request url
        {
-        success: function (data, status, xhr) {// success callback function
-            console.log(data)
+        success: function (data, status, xhr) {
+            console.log(data,"data")
+            $('html').html(data)
        }
       });
     });
