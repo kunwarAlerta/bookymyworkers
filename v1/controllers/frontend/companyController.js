@@ -1,11 +1,10 @@
-const company = require("../services/companyService");
-const template = require("../../helpers/templates");
-const sendRender = require("../../helpers/response");
+const company = require("../../services/companyService");
+const template = require("../../../helpers/templates");
+const sendRender = require("../../../helpers/response");
 
 async function index(req, res, next) {
   try {
     var data = await company.getCompanies();
-    console.log(data)
     sendRender(
         req, 
         res,
@@ -18,6 +17,9 @@ async function index(req, res, next) {
     next(error);
   }
 }
+
+
+
 
 module.exports.index = index;
 

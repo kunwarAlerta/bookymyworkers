@@ -1,12 +1,11 @@
 const express = require("express");
-const {
-  validateSignUp,
-  validateSignin,
-} = require("../../middleware/validations/userValidations");
 const router = express.Router();
-const { signin, signup } = require("../controllers/userController");
+const { uploadImage } =require("../services/fileUploadService")
 
-router.post("/user/signin", validateSignin, signin);
-router.post("/user/signup", validateSignUp, signup);
+const {createCategory}=require("../controllers/backend/categoryController");
+const {createCompany}=require("../controllers/backend/companyController");
+
+router.post("/category/add", uploadImage.single('image'),  createCategory);
+router.post("/company/add",  uploadImage.single('image'), createCompany);
 
 module.exports = router;

@@ -6,10 +6,10 @@ const {
 const router = express.Router();
 
 
-const userController = require("../controllers/userController");
-const homeController = require("../controllers/homeController");
-const categoryController = require("../controllers/categoryController");
-const companyController = require("../controllers/companyController");
+const userController = require("../controllers/frontend/userController");
+const homeController = require("../controllers/frontend/homeController");
+const categoryController = require("../controllers/frontend/categoryController");
+const companyController = require("../controllers/frontend/companyController");
 
 
 router.get("/", homeController.index);

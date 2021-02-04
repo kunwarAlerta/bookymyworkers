@@ -10,6 +10,7 @@ const CompanyModel = new mongoose.Schema({
     type: String,
     index: true,
   },
+  
   reviews:{
     type: [{ref:"Review" ,type: mongoose.Schema.Types.ObjectId }],
   },

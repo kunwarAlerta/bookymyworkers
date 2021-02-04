@@ -1,9 +1,9 @@
-const User = require("../../models/User");
-const template = require("../../helpers/templates");
-const messages = require("../../helpers/messages");
-const common = require("../../helpers/common");
-const sendRender = require("../../helpers/response");
-const { ValidationError, NotFound } = require("../../middleware/errors/errors");
+const User = require("../../../models/User");
+const template = require("../../../helpers/templates");
+const messages = require("../../../helpers/messages");
+const common = require("../../../helpers/common");
+const sendRender = require("../../../helpers/response");
+const { ValidationError, NotFound } = require("../../../middleware/errors/errors");
 
 async function signin(req, res, next) {
   try {

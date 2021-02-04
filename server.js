@@ -32,8 +32,8 @@ app.use("/admin", require("./v1/routes/backend"));
 app.use(handleErrorsWeb);
 app.set("view engine", "ejs");
 app.use(express.static('public'))
-app.use("/static", express.static(path.join(__dirname, "./uploads/")));
 
+app.use("/static", express.static(path.join(__dirname, "./uploads/")));
 app.use('/profile', express.static(path.join(__dirname, "./uploads/")));
 app.use('/services', express.static(path.join(__dirname, "./uploads/")));
 
