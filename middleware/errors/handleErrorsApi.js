@@ -1,7 +1,7 @@
-const { GeneralError } = require("./errors");
+const { GeneralErrorApi } = require("./errorsapi");
 
-const handleErrorsWeb = (err, req, res, next) => {
-  if (err instanceof GeneralError) {
+const handleErrorsApi = (err, req, res, next) => {
+  if (err instanceof GeneralErrorApi) {
     return res.status(err.getCode()).json({
       code: err.getCode(),
       status: "error",
@@ -16,4 +16,4 @@ const handleErrorsWeb = (err, req, res, next) => {
   });
 };
 
-module.exports = handleErrorsWeb;
+module.exports = handleErrorsApi;

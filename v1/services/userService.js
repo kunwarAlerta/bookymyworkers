@@ -1,6 +1,8 @@
 const { User } = require("../../models/User");
 
-async function signin() {}
+async function signin() {
+    
+}
 
 async function signup(req, res, next) {}
 

@@ -10,6 +10,7 @@ const flash=require('connect-flash');
 const app = express();
 const handleErrorsWeb = require("./middleware/errors/handleErrorsWeb");
 const connection = require("./db/connection");
+const handleErrorsApi = require("./middleware/errors/handleErrorsApi");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,12 +25,15 @@ app.use(
   }),
 );
 
+
+
 app.use(flash());
 
 app.use("/", require("./v1/routes/frontend"));
 app.use("/admin", require("./v1/routes/backend"));
-
 app.use(handleErrorsWeb);
+app.use(handleErrorsApi);
+
 app.set("view engine", "ejs");
 app.use(express.static('public'))
 
