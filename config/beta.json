@@ -1,0 +1,12 @@
+
+{
+    "port": 8000,
+    "mongoUrl": "mongodb+srv://princeinder:prince123@cluster0.lbs8d.mongodb.net/bookmyworkers?retryWrites=true&w=majority",
+    "jwtsecret": "jwtsecret",
+    "jwtexpire": 800000,
+    "cookieAge":800000,
+    "secretKey":"secret",
+    "Client_ID" : "801088723399081995",
+     "Client_Secret" :"X-p0l6e5AK6m9-jlGk6HGGj7dXg_Kzc"
+  }
+  

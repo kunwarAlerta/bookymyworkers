@@ -1,0 +1,187 @@
+<%- include('../shared/header') -%>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner user">
+      <div class="carousel-item active">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Enjoy your time<br/>Let us do the work.</h1>
+            <p>Sign-up and download the mobile app</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up for free</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Enjoy your time<br/>Let us do the work.</h1>
+            <p>Sign-up and download the mobile app</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up for free</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Enjoy your time<br/>Let us do the work.</h1>
+            <p>Sign-up and download the mobile app</p>
+            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up for free</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+<!-- how section start-->
+<div class="steps-section">
+            <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+                            <div class="dt-sc-title">
+            <p><img width="27" height="27" src="/assets/dist/img/title-img-01.png" class="attachment-full" alt="" ></p>
+            <h2>How it Works</h2>
+            <h3>What We have Done</h3>
+        </div>
+                <!-- Step Block -->
+                <div class="step-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon "><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="number">01</span>
+                        </div>
+                        <h3>Book For Service</h3>
+                        <div class="text">Book a call on our website or <br> (+321) 456 78 901</div>
+                    </div>
+                </div>
+
+                <!-- Step Block -->
+                <div class="step-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon "><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="number">02</span>
+                        </div>
+                        <h3>Meet Our Man</h3>
+                        <div class="text">Our professional &amp; expert staff <br> will meet you in 24 hrs</div>
+                    </div>
+                </div>
+
+                <!-- Step Block -->
+                <div class="step-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon "><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="number">03</span>
+                        </div>
+                        <h3>Fix a Problem</h3>
+                        <div class="text">He fix your all the problems <br> with good quality</div>
+                    </div>
+                </div>
+
+                <!-- Step Block -->
+                <div class="step-block col-lg-3 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon "><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="number">04</span>
+                        </div>
+                        <h3>Make Payment</h3>
+                        <div class="text">Pay your payment after your <br> satisfaction</div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+        </div>
+<!-- how section  end -->
+<!-- service start -->
+<div class="service">
+  <div class="container">
+    <div class="row">
+        <div class="dt-sc-title m-b-20">
+            <p><img width="27" height="27" src="/assets/dist/img/title-img.png" class="attachment-full" alt="" ></p>
+            <h2>Our Service</h2>
+            <h3>What We have Done</h3>
+        </div>
+        </div>
+        <div class="row">
+        <div class="service-main m-b-20">
+            <% data.forEach(function(service){ %>
+                <div class="service-list col-md-4 p-l-0 mb-4 pull-left">
+            <div class="image-service">
+                <img  src="/static/images/<%= service.image %>" class="attachment-full" alt="" >
+                <div class="text-service">
+                    <div class="service-icon"><span class="fa fa-home"> </span></div>
+                    <h3><a href="#"><%= service.name %></a></h3>
+                </div>
+            </div>
+        </div>
+        <% });%>
+    </div>
+    </div>
+   </div>
+</div>
+<!-- service sectiom end -->
+
+<!-- success section start -->
+    <div class="success-box">
+  <div class="container">
+    <div class="row">
+        <div class="dt-sc-title">
+        <p><img width="27" height="27" src="/assets/dist/img/title-img.png" class="attachment-full" alt="" ></p>
+        <h2>OUR SUCCESS RATE</h2>
+        <h3>What We have Done</h3>
+                </div>
+    </div>
+    <div class="row">
+    <div class="counter col-md-3 pull-left">
+    <div class="icon"><span><img width="81" height="90" src="/assets/dist/img/01.png" class="attachment-full" alt="" ></span></div>
+    <div class="sep"><span><img width="150" height="11" src="/assets/dist/img/line.png" class="attachment-full" alt="" ></span></div>
+    <h2 class="counter-number">6000+</h2>
+    <h5>Happy Clients</h5>
+    </div>
+    <div class="counter col-md-3 pull-left">
+    <div class="icon"><span><img width="81" height="90" src="/assets/dist/img/01.png" class="attachment-full" alt="" ></span></div>
+    <div class="sep"><span><img width="150" height="11" src="/assets/dist/img/line.png" class="attachment-full" alt="" ></span></div>
+    <h2 class="counter-number">56+</h2>
+    <h5>PROJECTS COMPLETED</h5>
+    </div>
+    <div class="counter col-md-3 pull-left">
+    <div class="icon"><span><img width="81" height="90" src="/assets/dist/img/01.png" class="attachment-full" alt="" ></span></div>
+    <div class="sep"><span><img width="150" height="11" src="/assets/dist/img/line.png" class="attachment-full" alt="" ></span></div>
+    <h2 class="counter-number">4+</h2>
+    <h5>AVERAGE RATINGS</h5>
+    </div>
+    <div class="counter col-md-3 pull-left">
+    <div class="icon"><span><img width="81" height="90" src="/assets/dist/img/01.png" class="attachment-full" alt="" ></span></div>
+    <div class="sep"><span><img width="150" height="11" src="/assets/dist/img/line.png" class="attachment-full" alt="" ></span></div>
+    <h2 class="counter-number">200+</h2>
+    <h5>QUALIFIED STAFS</h5>
+    </div>
+    </div>
+    </div>
+</div>
+<!-- contact end -->
+
+<!-- button start -->
+<div class="user-partner">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        <a class="btn black btn-primary" href="#" role="button">Sign up for free</a>
+    </div>
+   </div>
+   </div>
+</div>
+
+<%- include('../shared/footer') -%>
