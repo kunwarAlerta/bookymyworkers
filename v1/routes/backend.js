@@ -12,6 +12,7 @@ router.post("/user/signin", validateAdminSignin,adminController.signin);
 router.post("/user/signup", adminController.signup);
 
 router.post("/category/add", uploadImage.single('image'),  adminController.createCategory);
+router.post("/category/add", uploadImage.single('image'),  adminController.createCategory);
 router.post("/company/add",  uploadImage.single('image'), adminController.createCompany);
 
 module.exports = router;

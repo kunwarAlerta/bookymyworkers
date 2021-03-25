@@ -14,7 +14,7 @@ class GeneralError extends Error {
       return 404;
     }
     if (this instanceof ValidationError) {
-      return 400;
+      return 201;
     }
     return 500;
   }
