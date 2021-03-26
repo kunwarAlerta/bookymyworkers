@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "export NODE_ENV=dev&& node server.js",
+    "dev": "export NODE_ENV=dev && node server.js",
     "beta": "export NODE_ENV=beta && node server.js",
     "live": "export NODE_ENV=live && pm2 start server.js --name BOOKMYWORKERS"
   },

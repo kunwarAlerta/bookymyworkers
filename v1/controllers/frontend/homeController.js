@@ -1,7 +1,7 @@
 const category = require("../../services/categoryService");
 const template = require("../../../helpers/templates");
 const messages = require("../../../helpers/messages");
-const sendRender = require("../../../helpers/response");
+const{ sendRender }= require("../../../helpers/response");
 
 async function index(req, res, next) {
   try {

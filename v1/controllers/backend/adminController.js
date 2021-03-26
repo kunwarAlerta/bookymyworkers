@@ -80,6 +80,39 @@ async function createCategory(req, res, next) {
     next(error);
   }
 }
+async function getCategories(req, res, next) {
+  try {
+    var data = await categoryService.getCategories();
+    sendRes(
+     req,
+     res,
+     statusCode.SUCCESS,
+     "",
+     data
+   );
+    return res.json({data})
+  } catch (error) {
+    next(error);
+  }
+}
+
+async function getCompanies(req, res, next) {
+  try {
+    var data = await companyService.getCompanies();
+     sendRes(
+      req,
+      res,
+      statusCode.SUCCESS,
+      "",
+      data
+    );
+     return res.json({data})
+  } catch (error) {
+    next(error);
+  }
+}
+
+
 async function createCompany(req, res, next) {
   try {
    var exists= await companyService.search({name:req.body.name});
@@ -103,5 +136,7 @@ async function createCompany(req, res, next) {
 
 module.exports.signin = signin;
 module.exports.signup = signup;
+module.exports.getCategories = getCategories;
+module.exports.getCompanies = getCompanies;
 module.exports.createCategory = createCategory;
 module.exports.createCompany = createCompany;

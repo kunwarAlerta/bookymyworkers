@@ -1,6 +1,6 @@
 const company = require("../../services/companyService");
 const template = require("../../../helpers/templates");
-const sendRender = require("../../../helpers/response");
+const {sendRender}  = require("../../../helpers/response");
 
 
 async function createCompany(req, res, next) {
