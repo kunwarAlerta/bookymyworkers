@@ -75,7 +75,6 @@ async function createCategory(req, res, next) {
       messages.CATEGORY_CREATED_SUCCESSFULLY,
       data
     );
-     return res.json({data})
   } catch (error) {
     next(error);
   }
@@ -90,7 +89,6 @@ async function getCategories(req, res, next) {
      "",
      data
    );
-    return res.json({data})
   } catch (error) {
     next(error);
   }
@@ -106,7 +104,6 @@ async function getCompanies(req, res, next) {
       "",
       data
     );
-     return res.json({data})
   } catch (error) {
     next(error);
   }

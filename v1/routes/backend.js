@@ -16,6 +16,8 @@ router.post("/category/add", uploadImage.single('image'),  adminController.creat
 
 router.get("/category/list",  adminController.getCategories);
 
+router.get("/companies/list",  adminController.getCompanies);
+
 router.post("/company/add",  uploadImage.single('image'), adminController.createCompany);
 
 module.exports = router;
